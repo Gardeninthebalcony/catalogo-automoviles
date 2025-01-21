@@ -3,8 +3,8 @@ const Vehicle = require('../models/Vehicle');
 
 exports.getVehicles = async (req, res) => {
     try {
-      const userRole = req.user.role;  // Obtén el rol del usuario desde la autenticación
-      const userId = req.user.id;      // Obtén el ID del usuario autenticado
+      const userRole = req.user.role;  // rol del usuario desde la autenticación
+      const userId = req.user.id;      // ID del usuario autenticado
       
       let vehicles;
       if (userRole === 'admin') {
@@ -12,7 +12,7 @@ exports.getVehicles = async (req, res) => {
         vehicles = await Vehicle.find();
       } else {
         // Los usuarios solo ven los vehículos que les pertenecen
-        vehicles = await Vehicle.find({ owner: userId });  // Asegúrate de tener un campo 'owner' en el modelo Vehicle
+        vehicles = await Vehicle.find({ owner: userId });  
       }
       
       res.json(vehicles);
