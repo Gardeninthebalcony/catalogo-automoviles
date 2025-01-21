@@ -26,50 +26,50 @@ Este proyecto es una aplicación web para gestionar un catálogo de automóviles
 Usando la consola de git
 ### Clonar el Repositorio
 
-```bash
+
 $ git clone https://github.com/Gardeninthebalcony/catalogo-automoviles.git
 $ cd catalogo-automoviles
-```
+
 
 ### Configurar el Backend
 Utilice visual studio code:
 abre una terminal y
 
 1. Navega a la carpeta `backend`:
-   ```bash
+   
    $ cd backend
-   ```
+   
 2. Instala las dependencias:
-   ```bash
-   $ npm install
-   ```
-3. Crea un archivo `.env` basado en el ejemplo `.env.example` y proporciona tus propias variables de entorno:
-   ```plaintext
-   PORT=5000
-MONGODB_URI=mongodb+srv://Admin:AdminPassword@spore.qaeme.mongodb.net/?retryWrites=true&w=majority&appName=Spore
-JWT_SECRET=tu_clave_secreta
 
-   ```
+   $ npm install
+   
+3. Crea un archivo `.env` basado en el ejemplo `.env.example` y proporciona tus propias variables de entorno:
+   
+   PORT=5000
+   MONGODB_URI=mongodb+srv://Admin:AdminPassword@spore.qaeme.mongodb.net/?retryWrites=true&w=majority&appName=Spore
+   JWT_SECRET=tu_clave_secreta
+
+   
 4. Inicia el servidor:
-   ```bash
+
    $ npm start
-   ```
+   
 
 ### Configurar el Frontend
 En una nueva terminal
 
 1. Navega a la carpeta `frontend`:
-   ```bash
+   
    $ cd ../frontend
-   ```
+   
 2. Instala las dependencias:
-   ```bash
+   
    $ npm install
-   ```
+   
 3. Inicia el servidor de desarrollo:
-   ```bash
+   
    $ npm run serve
-   ```
+   
 
 ### Acceso a la Aplicación
 
@@ -78,13 +78,13 @@ En una nueva terminal
 ## Comandos útiles
 
 - **Iniciar el servidor de backend**:
-  ```bash
+  
   $ npm start
-  ```
+  
 - **Iniciar el servidor de frontend**:
-  ```bash
+  
   $ npm run serve
-  ```
+  
 
 ## Notas
 
