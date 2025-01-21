@@ -118,12 +118,3 @@ router.get('/positions', async (req, res) => {
 
 
 module.exports = router;
-
-/*router.get('/', protect, async (req, res) => {
-  try {
-    const vehicles = await Vehicle.find().populate('owner', 'name email'); // Relacionar el propietario del vehículo
-    res.json(vehicles);
-  } catch (error) {
-    res.status(500).json({ message: 'Error al obtener los vehículos', error });
-  }
-});*/
