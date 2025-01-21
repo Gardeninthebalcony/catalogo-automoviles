@@ -23,7 +23,7 @@ Este proyecto es una aplicación web para gestionar un catálogo de automóviles
 - Una cuenta de Git configurada
 
 ## Instrucciones para Ejecutar el Proyecto
-
+Usando la consola de git
 ### Clonar el Repositorio
 
 ```bash
@@ -32,10 +32,12 @@ $ cd catalogo-automoviles
 ```
 
 ### Configurar el Backend
+Utilice visual studio code:
+abre una terminal y
 
-1. Navega a la carpeta `server`:
+1. Navega a la carpeta `backend`:
    ```bash
-   $ cd server
+   $ cd backend
    ```
 2. Instala las dependencias:
    ```bash
@@ -44,8 +46,9 @@ $ cd catalogo-automoviles
 3. Crea un archivo `.env` basado en el ejemplo `.env.example` y proporciona tus propias variables de entorno:
    ```plaintext
    PORT=5000
-   MONGO_URI=<tu_conexion_mongodb>
-   JWT_SECRET=<tu_clave_secreta_jwt>
+MONGODB_URI=mongodb+srv://Admin:AdminPassword@spore.qaeme.mongodb.net/?retryWrites=true&w=majority&appName=Spore
+JWT_SECRET=tu_clave_secreta
+
    ```
 4. Inicia el servidor:
    ```bash
@@ -53,10 +56,11 @@ $ cd catalogo-automoviles
    ```
 
 ### Configurar el Frontend
+En una nueva terminal
 
-1. Navega a la carpeta `client`:
+1. Navega a la carpeta `frontend`:
    ```bash
-   $ cd ../client
+   $ cd ../frontend
    ```
 2. Instala las dependencias:
    ```bash
